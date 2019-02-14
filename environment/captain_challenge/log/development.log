@@ -158,3 +158,10 @@ Processing by ArenaController#home as HTML
 Completed 200 OK in 1246ms (Views: 673.8ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-02-14 14:52:29 +0100
+Processing by ArenaController#home as HTML
+  Rendering arena/home.html.erb within layouts/application
+  Rendered arena/home.html.erb within layouts/application (307.6ms)
+Completed 200 OK in 782ms (Views: 360.6ms)
+
+
