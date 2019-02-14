@@ -130,3 +130,10 @@ Processing by ApplicationController#hello as HTML
 Completed 200 OK in 590ms (Views: 11.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-02-14 13:13:44 +0100
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 432ms (Views: 7.5ms)
+
+
