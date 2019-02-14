@@ -137,3 +137,24 @@ Processing by ApplicationController#hello as HTML
 Completed 200 OK in 432ms (Views: 7.5ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-02-14 13:52:29 +0100
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 376ms (Views: 12.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-14 13:58:22 +0100
+Processing by ArenaController#home as HTML
+  Rendering arena/home.html.erb within layouts/application
+  Rendered arena/home.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 1352ms (Views: 939.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-14 14:09:14 +0100
+Processing by ArenaController#home as HTML
+  Rendering arena/home.html.erb within layouts/application
+  Rendered arena/home.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 1246ms (Views: 673.8ms)
+
+
