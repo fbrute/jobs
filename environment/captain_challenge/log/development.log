@@ -459,3 +459,24 @@ Processing by ArenaController#home as HTML
 Completed 200 OK in 65ms (Views: 61.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-02-15 12:38:51 +0100
+Processing by ArenaController#home as HTML
+  Rendering arena/home.html.erb within layouts/application
+  Rendered arena/home.html.erb within layouts/application (440.7ms)
+Completed 200 OK in 852ms (Views: 523.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-15 12:39:11 +0100
+Processing by ArenaController#home as HTML
+  Rendering arena/home.html.erb within layouts/application
+  Rendered arena/home.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 142ms (Views: 131.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-15 12:39:25 +0100
+Processing by ArenaController#home as HTML
+  Rendering arena/home.html.erb within layouts/application
+  Rendered arena/home.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 130ms (Views: 118.1ms)
+
+
