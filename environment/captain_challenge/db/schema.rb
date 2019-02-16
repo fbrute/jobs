@@ -10,12 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190214162004) do
+ActiveRecord::Schema.define(version: 20190215210354) do
 
-  create_table "players", force: :cascade do |t|
-    t.string "name"
-    t.integer "life_points"
-    t.integer "attack_points"
+  create_table "combattants", force: :cascade do |t|
+    t.string "nom"
+    t.integer "points_de_vie"
+    t.integer "points_d_attaque"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "fighters", force: :cascade do |t|
+    t.string "nom"
+    t.integer "points_de_vie"
+    t.integer "points_d_attaque"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

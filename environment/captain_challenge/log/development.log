@@ -256,3 +256,1675 @@ Processing by ArenaController#home as HTML
 Completed 200 OK in 47ms (Views: 38.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-02-15 12:43:31 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArenaController#home as HTML
+  Rendering arena/home.html.erb within layouts/application
+  Rendered arena/home.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 335ms (Views: 320.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2019-02-15 12:43:37 +0100
+Processing by PlayersController#index as HTML
+  Rendering players/index.html.erb within layouts/application
+  [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 52ms (Views: 38.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2019-02-15 12:56:41 +0100
+Processing by PlayersController#index as HTML
+  Rendering players/index.html.erb within layouts/application
+  [1m[36mPlayer Load (1.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 114ms (Views: 94.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2019-02-15 13:14:58 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlayersController#new as HTML
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (24.0ms)
+  Rendered players/new.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 373ms (Views: 341.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2019-02-15 13:15:19 +0100
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NFzJ4SfC0i7mIO4m+HzeCgjVgrzjjgyHIaKs1vB0/Xr3PyjR3ZAuxdDCOIk45o75cKcuDz+WZ5VWlXuMg2145A==", "player"=>{"name"=>"Surfer d'argent", "life_points"=>"200", "attack_points"=>"200"}, "commit"=>"Create Player"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (7.9ms)
+  Rendered players/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 66ms (Views: 58.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2019-02-15 13:16:45 +0100
+Processing by PlayersController#index as HTML
+  Rendering players/index.html.erb within layouts/application
+  [1m[36mPlayer Load (2.8ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 136ms (Views: 109.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2019-02-15 13:16:47 +0100
+Processing by PlayersController#new as HTML
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (171.8ms)
+  Rendered players/new.html.erb within layouts/application (180.2ms)
+Completed 200 OK in 289ms (Views: 243.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2019-02-15 17:12:32 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlayersController#new as HTML
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (23.8ms)
+  Rendered players/new.html.erb within layouts/application (31.7ms)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (:fr is not a valid locale):
+    12:   <% end %>
+    13: 
+    14:   <div class="field">
+    15:     <%= form.label :name %>
+    16:     <%= form.text_field :name, id: :player_name %>
+    17:   </div>
+    18: 
+  
+app/views/players/_form.html.erb:15:in `block in _app_views_players__form_html_erb__3464883662771770762_70096122412160'
+app/views/players/_form.html.erb:1:in `_app_views_players__form_html_erb__3464883662771770762_70096122412160'
+app/views/players/new.html.erb:3:in `_app_views_players_new_html_erb___4078313605945808616_70096125750280'
+Started GET "/players/new" for 127.0.0.1 at 2019-02-15 17:16:24 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlayersController#new as HTML
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (29.6ms)
+  Rendered players/new.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 373ms (Views: 347.8ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2019-02-15 17:16:59 +0100
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7PcIt8kgtBGaNiJhBpuOkR2G9n3Tom+wBi6oyWfZb9sDyx7GO1dZ0gzXVVgji2Un5MM8V3UfF3zRH0ZGIizaVQ==", "player"=>{"name"=>"", "life_points"=>"", "attack_points"=>"200"}, "commit"=>"Create Player"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (5.4ms)
+  Rendered players/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 61ms (Views: 52.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2019-02-15 17:23:31 +0100
+Processing by PlayersController#index as HTML
+  Rendering players/index.html.erb within layouts/application
+  [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 428ms (Views: 391.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2019-02-15 17:23:37 +0100
+Processing by PlayersController#new as HTML
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (25.8ms)
+  Rendered players/new.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 129ms (Views: 98.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2019-02-15 17:23:41 +0100
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NbfY+ehjYv/vqGJOpnzu7jtO84i2liEfaiAveR1pSbn21DnJEjGeFNlKtOFm5r4dQzxfO2qOSg0dF/gjbnDMJw==", "player"=>{"name"=>"", "life_points"=>"", "attack_points"=>"22"}, "commit"=>"Create Player"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (6.7ms)
+  Rendered players/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 74ms (Views: 63.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2019-02-15 17:24:01 +0100
+Processing by PlayersController#index as HTML
+  Rendering players/index.html.erb within layouts/application
+  [1m[36mPlayer Load (2.9ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 117ms (Views: 98.5ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2019-02-15 17:24:03 +0100
+Processing by PlayersController#new as HTML
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (19.5ms)
+  Rendered players/new.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 156ms (Views: 98.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2019-02-15 17:24:08 +0100
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G5UirHcx3Qcl2sSJ8K//ilgkqLNLrliFQ2ePBH2kcGHY9sOcjWMh7BM4EiYwNa95IFYEAJe2M5c0UFheDr31/w==", "player"=>{"name"=>"", "life_points"=>"", "attack_points"=>"22"}, "commit"=>"Create Player"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (5.4ms)
+  Rendered players/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 48ms (Views: 39.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2019-02-15 17:24:29 +0100
+Processing by PlayersController#index as HTML
+  Rendering players/index.html.erb within layouts/application
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 92ms (Views: 73.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2019-02-15 17:24:31 +0100
+Processing by PlayersController#new as HTML
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (21.8ms)
+  Rendered players/new.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 136ms (Views: 81.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2019-02-15 17:24:34 +0100
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fNMcCmvowTW/ItGko4GGbZ7+KWunaSqQYoHOuFwKxju/sP06kbo93onABwtjG9ae5oyF2HtxQYIVthniLxNDpQ==", "player"=>{"name"=>"", "life_points"=>"", "attack_points"=>"33"}, "commit"=>"Create Player"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (5.1ms)
+  Rendered players/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 59ms (Views: 51.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2019-02-15 17:24:49 +0100
+Processing by PlayersController#index as HTML
+  Rendering players/index.html.erb within layouts/application
+  [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 67ms (Views: 55.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2019-02-15 17:24:50 +0100
+Processing by PlayersController#new as HTML
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (18.9ms)
+  Rendered players/new.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 135ms (Views: 78.8ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2019-02-15 17:24:54 +0100
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iVxh+ovUqbH6zNhkjIU/jd6+A48s4EsJM5CJ+1aJJ8pKP4DKcYZVWswuDstMH29+psyvPPD4IBtEp16hJZCiVA==", "player"=>{"name"=>"", "life_points"=>"", "attack_points"=>"22"}, "commit"=>"Create Player"}
+  [1m[35m (0.9ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (9.0ms)
+  Rendered players/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 104ms (Views: 67.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2019-02-15 17:27:55 +0100
+Processing by PlayersController#index as HTML
+  Rendering players/index.html.erb within layouts/application
+  [1m[36mPlayer Load (1.6ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (30.5ms)
+Completed 200 OK in 330ms (Views: 240.6ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2019-02-15 17:27:58 +0100
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7UYG/+prW/GsOl2zEwoaYSuedixkShzT0U9BEMXx81wCehCOGBy2MjrbKoo2GvHX0tu8BsL3ZB8Gfq+fgARG0g==", "player"=>{"name"=>"", "life_points"=>"", "attack_points"=>"22"}, "commit"=>"Create Player"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (8.5ms)
+  Rendered players/new.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 138ms (Views: 86.1ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2019-02-15 17:28:01 +0100
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pfWpLQxyQUTPJLRpCUvdknPRmROrKjJ+wbemZcsAsEVKyb9c/gWsh1nFw1AsWzYkipRTOQ2XSrIWhkjqjvUFyw==", "player"=>{"name"=>"", "life_points"=>"", "attack_points"=>"22"}, "commit"=>"Create Player"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (6.3ms)
+  Rendered players/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 64ms (Views: 53.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2019-02-15 17:28:03 +0100
+Processing by PlayersController#index as HTML
+  Rendering players/index.html.erb within layouts/application
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 37ms (Views: 32.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2019-02-15 17:28:17 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlayersController#index as HTML
+  Rendering players/index.html.erb within layouts/application
+  [1m[36mPlayer Load (0.7ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 314ms (Views: 295.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2019-02-15 17:28:19 +0100
+Processing by PlayersController#new as HTML
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (29.7ms)
+  Rendered players/new.html.erb within layouts/application (33.7ms)
+Completed 200 OK in 97ms (Views: 66.9ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2019-02-15 17:28:21 +0100
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UtP0c30VcsaUjh4vdzrpRSof/M/5q5gcZOxWkpyx3qORsBVDh0eOLaJsyIC3oLm2Um1QfCWz8w4T24HI76hbPQ==", "player"=>{"name"=>"", "life_points"=>"", "attack_points"=>"333"}, "commit"=>"Create Player"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (3.9ms)
+  Rendered players/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 69ms (Views: 59.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2019-02-15 17:29:26 +0100
+Started POST "/players" for 127.0.0.1 at 2019-02-15 17:29:36 +0100
+Processing by PlayersController#index as HTML
+  Rendering players/index.html.erb within layouts/application
+  [1m[36mPlayer Load (0.7ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 86ms (Views: 69.3ms | ActiveRecord: 1.8ms)
+
+
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9VnpInwgNBDMMkCtrXRJKchdmoEyu+zsUKbGIRN5jUwaZf9TjlfZ01rTN5SIZKKfMRhQq5QGlCCHlyiuVow4wg==", "player"=>{"name"=>"", "life_points"=>"", "attack_points"=>"333"}, "commit"=>"Create Player"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (16.9ms)
+  Rendered players/new.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 188ms (Views: 114.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2019-02-15 17:29:39 +0100
+Processing by PlayersController#index as HTML
+  Rendering players/index.html.erb within layouts/application
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 60ms (Views: 54.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2019-02-15 17:29:40 +0100
+Processing by PlayersController#new as HTML
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (6.9ms)
+  Rendered players/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 65ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2019-02-15 17:29:44 +0100
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/ImOfm8R7itmIrWWeC7H62oAy6FP4GIPJ/m+9v3ZUPA/6m9OlUMSwFDAYzm4tJcYEnJnEpP4CR1QzmmsjsDVbg==", "player"=>{"name"=>"", "life_points"=>"", "attack_points"=>"333"}, "commit"=>"Create Player"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (10.3ms)
+  Rendered players/new.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 93ms (Views: 83.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2019-02-15 17:29:56 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlayersController#index as HTML
+  Rendering players/index.html.erb within layouts/application
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 289ms (Views: 271.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2019-02-15 17:29:58 +0100
+Processing by PlayersController#new as HTML
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (30.0ms)
+  Rendered players/new.html.erb within layouts/application (39.9ms)
+Completed 200 OK in 97ms (Views: 77.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2019-02-15 17:30:01 +0100
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q1O/aH+VhP5uxTSVM4prkwNFi4A8bJA1lwZ2YpBVw4JoMF5Yhcd4FVgn4jrzEDtgezcnM+B0+yfgMaE440xGHA==", "player"=>{"name"=>"", "life_points"=>"", "attack_points"=>"333"}, "commit"=>"Create Player"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (4.9ms)
+  Rendered players/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 69ms (Views: 62.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2019-02-15 17:32:13 +0100
+Processing by PlayersController#index as HTML
+  Rendering players/index.html.erb within layouts/application
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 95ms (Views: 81.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2019-02-15 17:32:25 +0100
+Processing by PlayersController#new as HTML
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (21.0ms)
+  Rendered players/new.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 178ms (Views: 112.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2019-02-15 17:32:27 +0100
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"faoj43W0VPTnJnXgxHE/romkNwbOwehn1Dux4uZjw76+ycLTj+aoH9HEo08E629d8dabtRLZg3WjDGa4lXpGIA==", "player"=>{"name"=>"", "life_points"=>"", "attack_points"=>""}, "commit"=>"Create Player"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (7.6ms)
+  Rendered players/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 86ms (Views: 55.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2019-02-15 17:33:28 +0100
+Processing by PlayersController#index as HTML
+  Rendering players/index.html.erb within layouts/application
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 169ms (Views: 151.8ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2019-02-15 17:33:30 +0100
+Processing by PlayersController#new as HTML
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (18.9ms)
+  Rendered players/new.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 111ms (Views: 70.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2019-02-15 17:33:33 +0100
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yUMuA7Y6GFp0HWMr7zV4k5cFYCmrTpnSnCeQFoO2d2IKIM8zTGjksUL/tYQvryhg73fMmndW8sDrEEdM8K/y/A==", "player"=>{"name"=>"", "life_points"=>"", "attack_points"=>"333"}, "commit"=>"Create Player"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (7.4ms)
+  Rendered players/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 62ms (Views: 45.3ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mPlayer Load (3.6ms)[0m  [1m[34mSELECT  "players".* FROM "players" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT  "players".* FROM "players" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" ORDER BY "players"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/players" for 127.0.0.1 at 2019-02-15 18:09:18 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlayersController#index as HTML
+  Rendering players/index.html.erb within layouts/application
+  [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 669ms (Views: 650.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2019-02-15 18:09:21 +0100
+Processing by PlayersController#new as HTML
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (34.4ms)
+  Rendered players/new.html.erb within layouts/application (38.5ms)
+Completed 200 OK in 119ms (Views: 72.5ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2019-02-15 18:09:24 +0100
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K0YXW5JcZnNpbraaVXsXBblBi3jUFvoT9+lTvaRBeKjoJfZraA6amF+MYDWV4Uf2wTMnywgOkQGA3oTn11j9Ng==", "player"=>{"name"=>"", "life_points"=>"", "attack_points"=>"222"}, "commit"=>"Create Player"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (15.5ms)
+  Rendered players/new.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 71ms (Views: 60.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2019-02-15 18:13:22 +0100
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RtnxM3kRVw7QlKeWfhEcUPBRfcHhVulVwWQ4y3R31Yqp5edCi2a6zUZ10K9bAffmCRS360frkZkWVdZEMYJgBA==", "player"=>{"name"=>"", "life_points"=>"", "attack_points"=>"222"}, "commit"=>"Create Player"}
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (25.0ms)
+  Rendered players/new.html.erb within layouts/application (34.5ms)
+Completed 200 OK in 238ms (Views: 176.8ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2019-02-15 18:24:08 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"57c584gzVCb5hCR34Fijq1PILGQoLoFgoGRJDucuyXMIiy+CekS55W9lU07FSEgdqo3mTo6T+ax3VaeBott8/Q==", "player"=>{"name"=>"fsfds", "life_points"=>"222", "attack_points"=>"222"}, "commit"=>"Create Player"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (20.5ms)
+  Rendered players/new.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 381ms (Views: 340.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2019-02-15 18:25:08 +0100
+Started POST "/players" for 127.0.0.1 at 2019-02-15 18:25:18 +0100
+Processing by PlayersController#index as HTML
+  Rendering players/index.html.erb within layouts/application
+  [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 58ms (Views: 50.8ms | ActiveRecord: 1.6ms)
+
+
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e4mk6dz9SEGLkqWCYlt+SJ0+G2vsSxfswtoUh7UXNH6UtbKYLoqlgh1z0rtHS5X+ZHvRQUr2byAV6/oI8OKB8A==", "player"=>{"name"=>"fsfds", "life_points"=>"222", "attack_points"=>"222"}, "commit"=>"Create Player"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (5.1ms)
+  Rendered players/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 111ms (Views: 40.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2019-02-15 18:27:32 +0100
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u7iFFtZ1YzZ8y5yoip2GOPcvxFwB9T/wUnpLOV9lZZBUhJNnJAKO9eoq65GvjW2ODmoOdqdIRzyFS6W2GpDQHg==", "player"=>{"name"=>"fsfds", "life_points"=>"222", "attack_points"=>"222"}, "commit"=>"Create Player"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (10.6ms)
+  Rendered players/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 171ms (Views: 125.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2019-02-15 18:27:36 +0100
+Processing by PlayersController#index as HTML
+  Rendering players/index.html.erb within layouts/application
+  [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 89ms (Views: 74.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2019-02-15 18:27:37 +0100
+Processing by PlayersController#new as HTML
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (11.0ms)
+  Rendered players/new.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 122ms (Views: 117.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2019-02-15 18:27:40 +0100
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aiTcMSMWLXbD0TgmojW/c15NEK0tFNvm9xCczOaZ7mipRz0B2UTRnfUz7olir++AJj+8HvEMsPSAJ0uWlYBr9g==", "player"=>{"name"=>"", "life_points"=>"", "attack_points"=>"222"}, "commit"=>"Create Player"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (7.0ms)
+  Rendered players/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 98ms (Views: 83.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2019-02-15 18:27:50 +0100
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MAK+5tp4qqXvdDFPmtcnDoNnWXLDiquSo2gPPWyQsCnfPqiXKA9HZnmVRna/x8y4eiKTWGU30150WeGyKWUFpw==", "player"=>{"name"=>"", "life_points"=>"222", "attack_points"=>"222"}, "commit"=>"Create Player"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (3.4ms)
+  Rendered players/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 42ms (Views: 35.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2019-02-15 18:28:00 +0100
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bMEJgB7gAVXLn8WC/nycFUmBoZdteJYrWKn+ND+GNeCD/R/x7Jfsll1+srvbbHejsMRrvcvF7uePmBC7enOAbg==", "player"=>{"name"=>"", "life_points"=>"22", "attack_points"=>"222"}, "commit"=>"Create Player"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (5.9ms)
+  Rendered players/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 48ms (Views: 41.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2019-02-15 18:32:42 +0100
+Processing by PlayersController#index as HTML
+  Rendering players/index.html.erb within layouts/application
+  [1m[36mPlayer Load (1.8ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 139ms (Views: 112.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2019-02-15 18:32:44 +0100
+Processing by PlayersController#new as HTML
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (25.0ms)
+  Rendered players/new.html.erb within layouts/application (36.1ms)
+Completed 200 OK in 106ms (Views: 92.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2019-02-15 18:32:45 +0100
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"huCiVQ0C8YKLQLIncg1NwtMd8sdbFFCSQTt1LkofJnZFg0Nl91ANab2iZIiylx0xq29edIcMO4A2DKJ0OQaj6A==", "player"=>{"name"=>"", "life_points"=>"", "attack_points"=>""}, "commit"=>"Create Player"}
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (9.5ms)
+  Rendered players/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 82ms (Views: 65.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2019-02-15 18:33:03 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlayersController#index as HTML
+  Rendering players/index.html.erb within layouts/application
+  [1m[36mPlayer Load (0.7ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 350ms (Views: 330.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2019-02-15 18:33:05 +0100
+Processing by PlayersController#new as HTML
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (25.1ms)
+  Rendered players/new.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 137ms (Views: 75.4ms | ActiveRecord: 10.5ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2019-02-15 18:33:07 +0100
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nKiow1//LtDhyy+y4/3gH2En+jwEHi6mlbAuo8vTr7pfy0nzpa3SO9cp+R0jZ7DsGVVWj9gGRbTih/n5uMoqJA==", "player"=>{"name"=>"", "life_points"=>"", "attack_points"=>""}, "commit"=>"Create Player"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering players/new.html.erb within layouts/application
+  Rendered players/_form.html.erb (3.8ms)
+  Rendered players/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 46ms (Views: 39.5ms | ActiveRecord: 0.1ms)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePlayers (20190214162004)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (10.7ms)[0m  [1m[35mDROP TABLE "players"[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20190214162004"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/players" for 127.0.0.1 at 2019-02-15 18:46:01 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/players"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/players" for 127.0.0.1 at 2019-02-15 18:46:04 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/players"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/players" for 127.0.0.1 at 2019-02-15 18:46:12 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/players"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/fighters" for 127.0.0.1 at 2019-02-15 19:23:11 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.6) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.6) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateFighters (20190215182233)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "fighters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nom" varchar, "points_de_vie" integer, "points_d_attaque" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190215182233"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/fighters" for 127.0.0.1 at 2019-02-15 19:23:36 +0100
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FightersController#index as HTML
+  Rendering fighters/index.html.erb within layouts/application
+  [1m[36mFighter Load (0.2ms)[0m  [1m[34mSELECT "fighters".* FROM "fighters"[0m
+  Rendered fighters/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 434ms (Views: 414.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/fighters/new" for 127.0.0.1 at 2019-02-15 19:23:48 +0100
+Processing by FightersController#new as HTML
+  Rendering fighters/new.html.erb within layouts/application
+  Rendered fighters/_form.html.erb (25.8ms)
+  Rendered fighters/new.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 110ms (Views: 59.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/fighters/new" for 127.0.0.1 at 2019-02-15 19:25:18 +0100
+Processing by FightersController#new as HTML
+Completed 500 Internal Server Error in 22ms
+
+
+  
+NoMethodError (undefined method `nom' for Fighter (call 'Fighter.connection' to establish a connection):Class
+Did you mean?  none):
+  
+app/models/fighter.rb:2:in `<class:Fighter>'
+app/models/fighter.rb:1:in `<top (required)>'
+app/controllers/fighters_controller.rb:17:in `new'
+Started GET "/fighters/new" for 127.0.0.1 at 2019-02-15 19:25:31 +0100
+Processing by FightersController#new as HTML
+Completed 500 Internal Server Error in 2ms
+
+
+  
+SyntaxError (/Users/france-norbrute/Documents/trafin/dvpt/jobs/environment/captain_challenge/app/models/fighter.rb:2: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+    validates :nom presence: true
+                   ^~~~~~~~):
+  
+app/models/fighter.rb:2: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/fighters_controller.rb:17:in `new'
+Started GET "/fighters/new" for 127.0.0.1 at 2019-02-15 19:25:55 +0100
+Processing by FightersController#new as HTML
+  Rendering fighters/new.html.erb within layouts/application
+  Rendered fighters/_form.html.erb (6.8ms)
+  Rendered fighters/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 91ms (Views: 67.2ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/fighters" for 127.0.0.1 at 2019-02-15 19:25:59 +0100
+Processing by FightersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KMmaT/bG0kDTcZphoMh+gLfnvZFqpmMk9qQU/SCbjJDH9Yw+BLE/g0WQ7ViF2JU2TqJ3u8wbG+ghlfpyZW45Hg==", "fighter"=>{"nom"=>"", "points_de_vie"=>"", "points_d_attaque"=>""}, "commit"=>"Create Fighter"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering fighters/new.html.erb within layouts/application
+  Rendered fighters/_form.html.erb (3.5ms)
+  Rendered fighters/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 45ms (Views: 35.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/fighters" for 127.0.0.1 at 2019-02-15 19:26:27 +0100
+Processing by FightersController#index as HTML
+  Rendering fighters/index.html.erb within layouts/application
+  [1m[36mFighter Load (1.3ms)[0m  [1m[34mSELECT "fighters".* FROM "fighters"[0m
+  Rendered fighters/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 123ms (Views: 116.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/fighters" for 127.0.0.1 at 2019-02-15 19:29:38 +0100
+Processing by FightersController#index as HTML
+  Rendering fighters/index.html.erb within layouts/application
+  [1m[36mFighter Load (1.0ms)[0m  [1m[34mSELECT "fighters".* FROM "fighters"[0m
+  Rendered fighters/index.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 217ms (Views: 184.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/fighters/new" for 127.0.0.1 at 2019-02-15 19:29:40 +0100
+Processing by FightersController#new as HTML
+  Rendering fighters/new.html.erb within layouts/application
+  Rendered fighters/_form.html.erb (31.2ms)
+  Rendered fighters/new.html.erb within layouts/application (37.9ms)
+Completed 200 OK in 145ms (Views: 127.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/fighters" for 127.0.0.1 at 2019-02-15 19:29:41 +0100
+Processing by FightersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7GdUlWphmE7I7/x//pRgv5VJSfJjdBGNU1PXkdZTFa+63khE/VQdoVAv7p+sE87fVEHgIzu/TK9As2WVrgIzZg==", "fighter"=>{"nom"=>"", "points_de_vie"=>"", "points_d_attaque"=>""}, "commit"=>"Create Fighter"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering fighters/new.html.erb within layouts/application
+  Rendered fighters/_form.html.erb (9.8ms)
+  Rendered fighters/new.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 90ms (Views: 81.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/fighters" for 127.0.0.1 at 2019-02-15 19:30:38 +0100
+Processing by FightersController#index as HTML
+  Rendering fighters/index.html.erb within layouts/application
+  [1m[36mFighter Load (0.5ms)[0m  [1m[34mSELECT "fighters".* FROM "fighters"[0m
+  Rendered fighters/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 267ms (Views: 230.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/fighters/new" for 127.0.0.1 at 2019-02-15 19:30:39 +0100
+Processing by FightersController#new as HTML
+  Rendering fighters/new.html.erb within layouts/application
+  Rendered fighters/_form.html.erb (23.7ms)
+  Rendered fighters/new.html.erb within layouts/application (30.5ms)
+Completed 200 OK in 243ms (Views: 206.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/fighters" for 127.0.0.1 at 2019-02-15 19:30:41 +0100
+Processing by FightersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L2b9yYDbLQKxg3B0Fhsg8rYnVC9e7R8/WhstiKI6yDN53+EYF+6o7SlDYpREnI6Sdy/9/gYmQh1J+5+M2mvu+g==", "fighter"=>{"nom"=>"", "points_de_vie"=>"", "points_d_attaque"=>""}, "commit"=>"Create Fighter"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering fighters/new.html.erb within layouts/application
+  Rendered fighters/_form.html.erb (6.9ms)
+  Rendered fighters/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 74ms (Views: 66.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/fighters" for 127.0.0.1 at 2019-02-15 19:31:25 +0100
+Processing by FightersController#index as HTML
+  Rendering fighters/index.html.erb within layouts/application
+  [1m[36mFighter Load (1.3ms)[0m  [1m[34mSELECT "fighters".* FROM "fighters"[0m
+  Rendered fighters/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 122ms (Views: 96.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/fighters/new" for 127.0.0.1 at 2019-02-15 19:31:26 +0100
+Processing by FightersController#new as HTML
+  Rendering fighters/new.html.erb within layouts/application
+  Rendered fighters/_form.html.erb (16.9ms)
+  Rendered fighters/new.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 90ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/fighters" for 127.0.0.1 at 2019-02-15 19:31:28 +0100
+Processing by FightersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lCDC9QInBnuffIELC8qliYE5sVFCWD8C5Gum6qlH0d7Cmd4klRKDlAe8k+tZTQvpQDEYgBqTYiD3ixTu0Rb3Fw==", "fighter"=>{"nom"=>"", "points_de_vie"=>"", "points_d_attaque"=>""}, "commit"=>"Create Fighter"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering fighters/new.html.erb within layouts/application
+  Rendered fighters/_form.html.erb (6.2ms)
+  Rendered fighters/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 66ms (Views: 55.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fighters" for 127.0.0.1 at 2019-02-15 19:31:59 +0100
+Processing by FightersController#index as HTML
+  Rendering fighters/index.html.erb within layouts/application
+  [1m[36mFighter Load (1.2ms)[0m  [1m[34mSELECT "fighters".* FROM "fighters"[0m
+  Rendered fighters/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 139ms (Views: 118.6ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/fighters/new" for 127.0.0.1 at 2019-02-15 19:32:01 +0100
+Processing by FightersController#new as HTML
+  Rendering fighters/new.html.erb within layouts/application
+  Rendered fighters/_form.html.erb (17.9ms)
+  Rendered fighters/new.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 119ms (Views: 75.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/fighters" for 127.0.0.1 at 2019-02-15 19:32:02 +0100
+Processing by FightersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rjPAIUuvZJFwdjyjQiHTqjSXeFhpQtNgmudXgW2WcTP4itzw3Jrhfui2LkMQpn3K9Z/RiTGJjkKJB+WFFcdX+g==", "fighter"=>{"nom"=>"", "points_de_vie"=>"", "points_d_attaque"=>""}, "commit"=>"Create Fighter"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering fighters/new.html.erb within layouts/application
+  Rendered fighters/_form.html.erb (6.2ms)
+  Rendered fighters/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 73ms (Views: 65.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/fighters" for 127.0.0.1 at 2019-02-15 19:32:15 +0100
+Processing by FightersController#index as HTML
+  Rendering fighters/index.html.erb within layouts/application
+  [1m[36mFighter Load (0.7ms)[0m  [1m[34mSELECT "fighters".* FROM "fighters"[0m
+  Rendered fighters/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 79ms (Views: 67.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/fighters/new" for 127.0.0.1 at 2019-02-15 19:32:17 +0100
+Processing by FightersController#new as HTML
+  Rendering fighters/new.html.erb within layouts/application
+  Rendered fighters/_form.html.erb (26.8ms)
+  Rendered fighters/new.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 139ms (Views: 107.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/fighters" for 127.0.0.1 at 2019-02-15 19:32:18 +0100
+Processing by FightersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VbohPR78n53qWU4soMq0Vy5XlOy6XxGi48SysAAto2cDAz3sickacnKZXMzyTRo37189PeKUTIDwJAC0eHyFrg==", "fighter"=>{"nom"=>"", "points_de_vie"=>"", "points_d_attaque"=>""}, "commit"=>"Create Fighter"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering fighters/new.html.erb within layouts/application
+  Rendered fighters/_form.html.erb (9.8ms)
+  Rendered fighters/new.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 106ms (Views: 100.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/fighters" for 127.0.0.1 at 2019-02-15 21:50:08 +0100
+Processing by FightersController#index as HTML
+  Rendering fighters/index.html.erb within layouts/application
+  [1m[36mFighter Load (0.8ms)[0m  [1m[34mSELECT "fighters".* FROM "fighters"[0m
+  Rendered fighters/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 98ms (Views: 77.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/fighters/new" for 127.0.0.1 at 2019-02-15 21:50:10 +0100
+Processing by FightersController#new as HTML
+  Rendering fighters/new.html.erb within layouts/application
+  Rendered fighters/_form.html.erb (25.1ms)
+  Rendered fighters/new.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 122ms (Views: 69.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/fighters" for 127.0.0.1 at 2019-02-15 21:50:26 +0100
+Processing by FightersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J06dLaUyVqXl8IDYYfgYUoqzsa2nj0svYXeWIPei775x94H8MgfTSn0wkjgzf7YyS7sYfP9EFg1ylyQkj/PJdw==", "fighter"=>{"nom"=>"", "points_de_vie"=>"", "points_d_attaque"=>"333"}, "commit"=>"Créer un(e) Fighter"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering fighters/new.html.erb within layouts/application
+  Rendered fighters/_form.html.erb (12.1ms)
+  Rendered fighters/new.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 92ms (Views: 73.7ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCombattants (20190215210354)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "combattants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nom" varchar, "points_de_vie" integer, "points_d_attaque" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190215210354"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/combattants" for 127.0.0.1 at 2019-02-15 22:06:31 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CombattantsController#index as HTML
+  Rendering combattants/index.html.erb within layouts/application
+  [1m[36mCombattant Load (0.7ms)[0m  [1m[34mSELECT "combattants".* FROM "combattants"[0m
+  Rendered combattants/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 416ms (Views: 397.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:06:41 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (69.4ms)
+  Rendered combattants/new.html.erb within layouts/application (86.3ms)
+Completed 200 OK in 148ms (Views: 136.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 22:07:33 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ctsg5BwsO/9POz53KW59gQm3qbROb0IOXo/B+iOKVhJMFZbSpBuNgcWFNr6Hr/FZayvlIg57G/wLxjTNLTe4Vg==", "combattant"=>{"nom"=>"", "points_de_vie"=>"", "points_d_attaque"=>""}, "commit"=>"Create Combattant"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO "combattants" ("nom", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom", ""], ["created_at", "2019-02-15 21:07:33.484109"], ["updated_at", "2019-02-15 21:07:33.484109"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/combattants/1
+Completed 302 Found in 7ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/combattants/1" for 127.0.0.1 at 2019-02-15 22:07:33 +0100
+Processing by CombattantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCombattant Load (0.3ms)[0m  [1m[34mSELECT  "combattants".* FROM "combattants" WHERE "combattants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering combattants/show.html.erb within layouts/application
+  Rendered combattants/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 55ms (Views: 45.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/combattants" for 127.0.0.1 at 2019-02-15 22:07:38 +0100
+Processing by CombattantsController#index as HTML
+  Rendering combattants/index.html.erb within layouts/application
+  [1m[36mCombattant Load (0.3ms)[0m  [1m[34mSELECT "combattants".* FROM "combattants"[0m
+  Rendered combattants/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 93ms (Views: 75.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:07:42 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (6.6ms)
+  Rendered combattants/new.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 121ms (Views: 117.1ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/combattants/1" for 127.0.0.1 at 2019-02-15 22:07:52 +0100
+Processing by CombattantsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"apElSlF6f/affJpzoPn+DXJuoImHDkyVTyJlOtpRGsiFrTM7ow2SNQmd7UqF6RW7iytqoyGzNFmYE4u1n6SvRg==", "id"=>"1"}
+  [1m[36mCombattant Load (1.1ms)[0m  [1m[34mSELECT  "combattants".* FROM "combattants" WHERE "combattants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[31mDELETE FROM "combattants" WHERE "combattants"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/combattants
+Completed 302 Found in 23ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/combattants" for 127.0.0.1 at 2019-02-15 22:07:52 +0100
+Processing by CombattantsController#index as HTML
+  Rendering combattants/index.html.erb within layouts/application
+  [1m[36mCombattant Load (0.6ms)[0m  [1m[34mSELECT "combattants".* FROM "combattants"[0m
+  Rendered combattants/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 40ms (Views: 33.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/combattants" for 127.0.0.1 at 2019-02-15 22:14:42 +0100
+Processing by CombattantsController#index as HTML
+  Rendering combattants/index.html.erb within layouts/application
+  [1m[36mCombattant Load (0.6ms)[0m  [1m[34mSELECT "combattants".* FROM "combattants"[0m
+  Rendered combattants/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 204ms (Views: 188.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:14:44 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (7.5ms)
+  Rendered combattants/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 105ms (Views: 53.7ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 22:14:50 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"POfyDjrvGrUgrECoWp338k1sQu74aSj+2PjS+xTR7jt6KUQ4gtisy6oSSGH0XHsqL/AOeLh9cQyNsSfMGmwAfw==", "combattant"=>{"nom"=>"", "points_de_vie"=>"", "points_d_attaque"=>""}, "commit"=>"Create Combattant"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (7.8ms)
+  Rendered combattants/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 85ms (Views: 68.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/combattants" for 127.0.0.1 at 2019-02-15 22:16:46 +0100
+Processing by CombattantsController#index as HTML
+  Rendering combattants/index.html.erb within layouts/application
+  [1m[36mCombattant Load (0.5ms)[0m  [1m[34mSELECT "combattants".* FROM "combattants"[0m
+  Rendered combattants/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 81ms (Views: 69.5ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:16:47 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (46.6ms)
+  Rendered combattants/new.html.erb within layouts/application (53.7ms)
+Completed 200 OK in 222ms (Views: 157.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 22:16:49 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OZFFBHjGwGSw5T97DGsgOBYsi+u185qGrxiPt+4gK/B/X/MywPF2GjpbN7KiqqzgdLDHffXnw3T6UXqA4J3FtA==", "combattant"=>{"nom"=>"", "points_de_vie"=>"", "points_d_attaque"=>""}, "commit"=>"Create Combattant"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (33.2ms)
+  Rendered combattants/new.html.erb within layouts/application (42.5ms)
+Completed 200 OK in 179ms (Views: 133.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/combattants" for 127.0.0.1 at 2019-02-15 22:17:01 +0100
+Processing by CombattantsController#index as HTML
+  Rendering combattants/index.html.erb within layouts/application
+  [1m[36mCombattant Load (0.2ms)[0m  [1m[34mSELECT "combattants".* FROM "combattants"[0m
+  Rendered combattants/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 91ms (Views: 80.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:17:03 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (30.0ms)
+  Rendered combattants/new.html.erb within layouts/application (36.9ms)
+Completed 200 OK in 140ms (Views: 99.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 22:17:04 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JxesvvdPnEnWk+aP9ZNi8bWoyzoiDBTLBJe9NyszU+lh2RqIT3gqN1wt7kZbUu4p1zSHrGIYTTlR3kgAJY69rQ==", "combattant"=>{"nom"=>"", "points_de_vie"=>"", "points_d_attaque"=>""}, "commit"=>"Create Combattant"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (9.0ms)
+  Rendered combattants/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 75ms (Views: 67.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/combattants" for 127.0.0.1 at 2019-02-15 22:20:24 +0100
+Processing by CombattantsController#index as HTML
+  Rendering combattants/index.html.erb within layouts/application
+  [1m[36mCombattant Load (0.2ms)[0m  [1m[34mSELECT "combattants".* FROM "combattants"[0m
+  Rendered combattants/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 89ms (Views: 74.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:20:26 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (24.5ms)
+  Rendered combattants/new.html.erb within layouts/application (29.8ms)
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 2.2ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /Users/france-norbrute/Documents/trafin/dvpt/jobs/environment/captain_challenge/config/locales/fr.yml: #<Psych::SyntaxError: (/Users/france-norbrute/Documents/trafin/dvpt/jobs/environment/captain_challenge/config/locales/fr.yml): did not find expected key while parsing a block mapping at line 32 column 1>):
+    12:   <% end %>
+    13: 
+    14:   <div class="field">
+    15:     <%= form.label :nom %>
+    16:     <%= form.text_field :nom, id: :combattant_nom %>
+    17:   </div>
+    18: 
+  
+app/views/combattants/_form.html.erb:15:in `block in _app_views_combattants__form_html_erb___1867452674941096987_70346885658920'
+app/views/combattants/_form.html.erb:1:in `_app_views_combattants__form_html_erb___1867452674941096987_70346885658920'
+app/views/combattants/new.html.erb:3:in `_app_views_combattants_new_html_erb__1168057897925534331_70346885691580'
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:20:55 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (43.8ms)
+  Rendered combattants/new.html.erb within layouts/application (49.8ms)
+Completed 200 OK in 131ms (Views: 100.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:20:59 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (3.8ms)
+  Rendered combattants/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 48ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 22:21:03 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CN/hoWPyYAvr+1Kz7pH/VTHKBdea9yNIdJvQ9a2U5tvn4/fQkYWNyH0aJYrLgRTjyI/P/TxKW4Sjqj566GFTVQ==", "combattant"=>{"nom"=>"", "points_de_vie"=>"", "points_d_attaque"=>""}, "commit"=>"Create Combattant"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (3.5ms)
+  Rendered combattants/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 43ms (Views: 35.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/combattants" for 127.0.0.1 at 2019-02-15 22:24:08 +0100
+Processing by CombattantsController#index as HTML
+  Rendering combattants/index.html.erb within layouts/application
+  [1m[36mCombattant Load (0.3ms)[0m  [1m[34mSELECT "combattants".* FROM "combattants"[0m
+  Rendered combattants/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 126ms (Views: 102.8ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:24:10 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (37.1ms)
+  Rendered combattants/new.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 173ms (Views: 110.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:25:57 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (20.4ms)
+  Rendered combattants/new.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 126ms (Views: 94.6ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 22:26:01 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"afpJmILL7U3k+76i+UBN6L3N3SgiaDFWGiPdg3H9pO+Gxl/pcLwAjnIayZvcUKZeRIgXAoTVSZrNEjMMNAgRYQ==", "combattant"=>{"nom"=>"", "points_de_vie"=>"", "points_d_attaque"=>""}, "commit"=>"Create Combattant"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (8.6ms)
+  Rendered combattants/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 81ms (Views: 72.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/combattants" for 127.0.0.1 at 2019-02-15 22:26:07 +0100
+Processing by CombattantsController#index as HTML
+  Rendering combattants/index.html.erb within layouts/application
+  [1m[36mCombattant Load (0.5ms)[0m  [1m[34mSELECT "combattants".* FROM "combattants"[0m
+  Rendered combattants/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 65ms (Views: 60.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/combattants" for 127.0.0.1 at 2019-02-15 22:26:08 +0100
+Processing by CombattantsController#index as HTML
+  Rendering combattants/index.html.erb within layouts/application
+  [1m[36mCombattant Load (0.4ms)[0m  [1m[34mSELECT "combattants".* FROM "combattants"[0m
+  Rendered combattants/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 101ms (Views: 94.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:26:10 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (10.0ms)
+  Rendered combattants/new.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 77ms (Views: 67.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:26:26 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (31.3ms)
+  Rendered combattants/new.html.erb within layouts/application (36.9ms)
+Completed 200 OK in 334ms (Views: 306.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:26:30 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (2.6ms)
+  Rendered combattants/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 39ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 22:27:33 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OjGtc0vc/PFnxD4nDpv6MqHTOW10NDYX5zd1B6/vwHHVDbsCuasRMvElSR4rixGEWJbzR9KJTtswBpuI6hp1/w==", "combattant"=>{"nom"=>"", "points_de_vie"=>"", "points_d_attaque"=>""}, "commit"=>"Create Combattant"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (5.6ms)
+  Rendered combattants/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 59ms (Views: 52.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:27:48 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (5.5ms)
+  Rendered combattants/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 71ms (Views: 65.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:27:52 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (5.1ms)
+  Rendered combattants/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 58ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 22:27:55 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FSDp0RcuH/g+rnZ1EdJQGBB2XQArdiwPOkXVV248NdD6HP+g5VnyO6hPAUw0wruu6TOXKo3LVMPtdDvYK8mAXg==", "combattant"=>{"nom"=>"", "points_de_vie"=>"", "points_d_attaque"=>""}, "commit"=>"Create Combattant"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (5.0ms)
+  Rendered combattants/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 63ms (Views: 56.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/combattants" for 127.0.0.1 at 2019-02-15 22:28:01 +0100
+Processing by CombattantsController#index as HTML
+  Rendering combattants/index.html.erb within layouts/application
+  [1m[36mCombattant Load (0.3ms)[0m  [1m[34mSELECT "combattants".* FROM "combattants"[0m
+  Rendered combattants/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 83ms (Views: 69.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/combattants" for 127.0.0.1 at 2019-02-15 22:28:13 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CombattantsController#index as HTML
+  Rendering combattants/index.html.erb within layouts/application
+  [1m[36mCombattant Load (0.2ms)[0m  [1m[34mSELECT "combattants".* FROM "combattants"[0m
+  Rendered combattants/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 300ms (Views: 282.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:28:15 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (29.9ms)
+  Rendered combattants/new.html.erb within layouts/application (41.4ms)
+Completed 200 OK in 104ms (Views: 85.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 22:28:21 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QcmE0wW9DsKrGi/b42Nol8CKFrN8SUvuLzBSPGCJJ9EHBzLlvYq4vCGkJxJNouRPohZaJTxdEhx6eacLbjTJlQ==", "combattant"=>{"nom"=>"", "points_de_vie"=>"", "points_d_attaque"=>""}, "commit"=>"Créer un(e) Combattant"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (3.2ms)
+  Rendered combattants/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 43ms (Views: 37.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/combattants" for 127.0.0.1 at 2019-02-15 22:29:29 +0100
+Processing by CombattantsController#index as HTML
+  Rendering combattants/index.html.erb within layouts/application
+  [1m[36mCombattant Load (0.2ms)[0m  [1m[34mSELECT "combattants".* FROM "combattants"[0m
+  Rendered combattants/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 42ms (Views: 38.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:29:31 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (17.6ms)
+  Rendered combattants/new.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 101ms (Views: 80.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 22:29:32 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oqX0GJ34xjjf0y3CPfacnFR618jV3lhqXq7s2WOeHjbka0IuJc9wRlVtJQuTNxBENuabXpXKAZgL5xnubSPwcg==", "combattant"=>{"nom"=>"", "points_de_vie"=>"", "points_d_attaque"=>""}, "commit"=>"Créer un(e) Combattant"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (3.9ms)
+  Rendered combattants/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 44ms (Views: 38.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/combattants" for 127.0.0.1 at 2019-02-15 22:31:06 +0100
+Processing by CombattantsController#index as HTML
+  Rendering combattants/index.html.erb within layouts/application
+  [1m[36mCombattant Load (0.4ms)[0m  [1m[34mSELECT "combattants".* FROM "combattants"[0m
+  Rendered combattants/index.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 140ms (Views: 116.1ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:31:12 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (26.1ms)
+  Rendered combattants/new.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 155ms (Views: 97.1ms | ActiveRecord: 16.1ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 22:31:14 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IkBsIv3ulBaGiyUgA/8Smj4S0gbnZS2IVdybnjjIxw1kjtoURdkiaAw1LemtPp5CXI6ekKdxdHoAlW6pNnUpSQ==", "combattant"=>{"nom"=>"", "points_de_vie"=>"", "points_d_attaque"=>""}, "commit"=>"Créer un(e) Combattant"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (4.2ms)
+  Rendered combattants/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 62ms (Views: 52.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/combattants" for 127.0.0.1 at 2019-02-15 22:31:50 +0100
+Processing by CombattantsController#index as HTML
+  Rendering combattants/index.html.erb within layouts/application
+  [1m[36mCombattant Load (0.3ms)[0m  [1m[34mSELECT "combattants".* FROM "combattants"[0m
+  Rendered combattants/index.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 162ms (Views: 121.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:31:52 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (27.3ms)
+  Rendered combattants/new.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 136ms (Views: 91.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 22:31:54 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wxcpB5LLE1S4h4pNVzoPkSbZPqSiM6TF7useEWTCZ2mF2Z8xKvylKjI5goT5+4NJREVyMuIn/Te7ousman+JLQ==", "combattant"=>{"nom"=>"", "points_de_vie"=>"", "points_d_attaque"=>""}, "commit"=>"Créer un(e) Combattant"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (13.5ms)
+  Rendered combattants/new.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 106ms (Views: 85.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/combattants" for 127.0.0.1 at 2019-02-15 22:32:19 +0100
+Processing by CombattantsController#index as HTML
+  Rendering combattants/index.html.erb within layouts/application
+  [1m[36mCombattant Load (0.3ms)[0m  [1m[34mSELECT "combattants".* FROM "combattants"[0m
+  Rendered combattants/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 82ms (Views: 70.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:32:21 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (60.4ms)
+  Rendered combattants/new.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 298ms (Views: 246.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 22:32:22 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g9WNpiQMVgXH26yQ1AZtpgWuYLCxYq6KItGR3oV/9brFGzuQnDvge01lpFl6x+F+ZzIsJvF293h3mGTpi8Ib/g==", "combattant"=>{"nom"=>"", "points_de_vie"=>"", "points_d_attaque"=>""}, "commit"=>"Créer un(e) Combattant"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (21.0ms)
+  Rendered combattants/new.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 134ms (Views: 124.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/combattants" for 127.0.0.1 at 2019-02-15 22:32:47 +0100
+Processing by CombattantsController#index as HTML
+  Rendering combattants/index.html.erb within layouts/application
+  [1m[36mCombattant Load (0.5ms)[0m  [1m[34mSELECT "combattants".* FROM "combattants"[0m
+  Rendered combattants/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 172ms (Views: 144.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:32:48 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (32.7ms)
+  Rendered combattants/new.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 156ms (Views: 118.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 22:32:50 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FL0j7nqOi7hjWmfNTeXuinhax+61d0elpviQXk8OTAdSc5XYwrk9xunkbwTjJGJSGsaLePVjHlfzsWVpQbOiQw==", "combattant"=>{"nom"=>"", "points_de_vie"=>"", "points_d_attaque"=>""}, "commit"=>"Créer un(e) Combattant"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (15.0ms)
+  Rendered combattants/new.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 102ms (Views: 91.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 22:34:52 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Krjcd58EHSAsnoHheC8Tn5iCHgigWq4k4mss+IWH8H7FhMoGbXPw47p/9thdP/gpYcfUIgbn1ug1WsJ3wHJF8A==", "combattant"=>{"nom"=>"Chevalier d'Argent", "points_de_vie"=>"", "points_d_attaque"=>""}, "commit"=>"Créer un(e) Combattant"}
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (9.8ms)
+  Rendered combattants/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 104ms (Views: 85.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/combattants" for 127.0.0.1 at 2019-02-15 22:39:01 +0100
+Processing by CombattantsController#index as HTML
+  Rendering combattants/index.html.erb within layouts/application
+  [1m[36mCombattant Load (0.3ms)[0m  [1m[34mSELECT "combattants".* FROM "combattants"[0m
+  Rendered combattants/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 120ms (Views: 88.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:39:04 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (13.5ms)
+  Rendered combattants/new.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 105ms (Views: 60.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 22:39:31 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5mnkIIUEKomwRxmqbXTh6Oqh1rbqR+a/Wtj8znr7R3igp1IWPTOc9zr5EWPDtW0wiD2aIKpTv00PkQn5dEapPA==", "combattant"=>{"nom"=>"Chevalier d'Argent", "points_de_vie"=>"222", "points_d_attaque"=>""}, "commit"=>"Créer un(e) Combattant"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (4.2ms)
+  Rendered combattants/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 72ms (Views: 62.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/combattants" for 127.0.0.1 at 2019-02-15 22:44:43 +0100
+Processing by CombattantsController#index as HTML
+  Rendering combattants/index.html.erb within layouts/application
+  [1m[36mCombattant Load (0.4ms)[0m  [1m[34mSELECT "combattants".* FROM "combattants"[0m
+  Rendered combattants/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 173ms (Views: 149.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:44:45 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (39.8ms)
+  Rendered combattants/new.html.erb within layouts/application (46.0ms)
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /Users/france-norbrute/Documents/trafin/dvpt/jobs/environment/captain_challenge/config/locales/fr.yml: #<Psych::SyntaxError: (/Users/france-norbrute/Documents/trafin/dvpt/jobs/environment/captain_challenge/config/locales/fr.yml): did not find expected key while parsing a block mapping at line 37 column 7>):
+    12:   <% end %>
+    13: 
+    14:   <div class="field">
+    15:     <%= form.label :nom %>
+    16:     <%= form.text_field :nom, id: :combattant_nom %>
+    17:   </div>
+    18: 
+  
+app/views/combattants/_form.html.erb:15:in `block in _app_views_combattants__form_html_erb___514487594497159715_70365719370320'
+app/views/combattants/_form.html.erb:1:in `_app_views_combattants__form_html_erb___514487594497159715_70365719370320'
+app/views/combattants/new.html.erb:3:in `_app_views_combattants_new_html_erb__1425186920903690272_70365689738600'
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:50:01 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (27.9ms)
+  Rendered combattants/new.html.erb within layouts/application (34.3ms)
+Completed 200 OK in 159ms (Views: 101.4ms | ActiveRecord: 8.4ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 22:50:08 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VmDDn6xwRj78rfIZFYivBTTVLCpFSGS5W+LJTZUwYam5XNXuXger/WpMhSAwmESzzZDmAOP1HHWM0yfC0MXUJw==", "combattant"=>{"nom"=>"fsfds", "points_de_vie"=>"333", "points_d_attaque"=>""}, "commit"=>"Créer un(e) Combattant"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (6.6ms)
+  Rendered combattants/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 60ms (Views: 50.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/combattants" for 127.0.0.1 at 2019-02-15 22:53:21 +0100
+Processing by CombattantsController#index as HTML
+  Rendering combattants/index.html.erb within layouts/application
+  [1m[36mCombattant Load (0.3ms)[0m  [1m[34mSELECT "combattants".* FROM "combattants"[0m
+  Rendered combattants/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 113ms (Views: 96.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/combattants/new" for 127.0.0.1 at 2019-02-15 22:53:22 +0100
+Processing by CombattantsController#new as HTML
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (24.9ms)
+  Rendered combattants/new.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 185ms (Views: 123.6ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 22:53:28 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"itKOTSqbCY/Wa9+xu11OxCShNm7BOHjX3do80W/d8OfMHDh7kqy/8VzV13gVnMIcRj16+IEsISWIk8nmYWAeow==", "combattant"=>{"nom"=>"fsfsd", "points_de_vie"=>"333", "points_d_attaque"=>""}, "commit"=>"Créer un(e) Combattant"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (4.8ms)
+  Rendered combattants/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 57ms (Views: 48.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 22:53:42 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bNe3pUMUjt7PV3nNw7h7WmukCO7ExK5FsBdRcNg1GFKD66HUsWNjHVm2DvTmqJDskuHCxGJ51olnJr//ncCt3A==", "combattant"=>{"nom"=>"fsfsd", "points_de_vie"=>"333", "points_d_attaque"=>""}, "commit"=>"Créer un(e) Combattant"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (5.0ms)
+  Rendered combattants/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 93ms (Views: 60.3ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 23:01:45 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"grzd8gOmlDFiNUutamrSfcLz3n+VnCV110TXXxATuh1tgMuD8dF58vTUPJRPejnLO7YUVTMhXbkAdTnQVeYPkw==", "combattant"=>{"nom"=>"Surfer d'Argent", "points_de_vie"=>"20", "points_d_attaque"=>""}, "commit"=>"Créer un(e) Combattant"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (9.4ms)
+  Rendered combattants/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 138ms (Views: 81.0ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 23:02:03 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hrbCHg5IWACLA07vpQl3MeojbSoJr8eMdwqBajd4PE1pitRv/D+1wx3iOdaAGZyHE2anAK8Sv0CgO2/lco2Jww==", "combattant"=>{"nom"=>"Surfer d'Argent", "points_de_vie"=>"20", "points_d_attaque"=>""}, "commit"=>"Créer un(e) Combattant"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (5.3ms)
+  Rendered combattants/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 106ms (Views: 66.6ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 23:03:17 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"07ie6xsUmB9wFTOxjfUy5Qc8iNAUhlNXbNv0DlOB4fA8hIia6WN13Ob0RIio5dlT/nlC+rI7K5u76hqBFnRUfg==", "combattant"=>{"nom"=>"Surfer d'Argent", "points_de_vie"=>"20", "points_d_attaque"=>"222"}, "commit"=>"Créer un(e) Combattant"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering combattants/new.html.erb within layouts/application
+  Rendered combattants/_form.html.erb (11.5ms)
+  Rendered combattants/new.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 170ms (Views: 109.8ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/combattants" for 127.0.0.1 at 2019-02-15 23:03:27 +0100
+Processing by CombattantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"12dA2LQgCyWjHRsEmyaB4Ig1KAsgiJmMZBurN0H3uw44W1apRlfm5jX8bD2+NmpWcXDiIYY14UCzKkW4BAIOgA==", "combattant"=>{"nom"=>"Surfer d'Argent", "points_de_vie"=>"85", "points_d_attaque"=>"222"}, "commit"=>"Créer un(e) Combattant"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.7ms)[0m  [1m[32mINSERT INTO "combattants" ("nom", "points_de_vie", "points_d_attaque", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nom", "Surfer d'Argent"], ["points_de_vie", 85], ["points_d_attaque", 222], ["created_at", "2019-02-15 22:03:27.573651"], ["updated_at", "2019-02-15 22:03:27.573651"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/combattants/2
+Completed 302 Found in 16ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/combattants/2" for 127.0.0.1 at 2019-02-15 23:03:27 +0100
+Processing by CombattantsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCombattant Load (0.5ms)[0m  [1m[34mSELECT  "combattants".* FROM "combattants" WHERE "combattants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering combattants/show.html.erb within layouts/application
+  Rendered combattants/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 104ms (Views: 83.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/combattants" for 127.0.0.1 at 2019-02-15 23:04:47 +0100
+Processing by CombattantsController#index as HTML
+  Rendering combattants/index.html.erb within layouts/application
+  [1m[36mCombattant Load (0.2ms)[0m  [1m[34mSELECT "combattants".* FROM "combattants"[0m
+  Rendered combattants/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 70ms (Views: 61.0ms | ActiveRecord: 1.9ms)
+
+
