@@ -34,5 +34,7 @@ RSpec.describe CombattantsController, type: :routing do
     it "routes to #destroy" do
       expect(:delete => "/combattants/1").to route_to("combattants#destroy", :id => "1")
     end
+
+  
   end
 end

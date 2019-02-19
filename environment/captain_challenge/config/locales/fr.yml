@@ -32,6 +32,8 @@
 fr:
   activerecord:
     errors:
+      messages:
+        record_invalid: "enregistrement invalide"
       models:
         combattant:
           attributes:

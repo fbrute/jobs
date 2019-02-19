@@ -1,0 +1,17 @@
+<div class="jumbotron d-flex justify-content-center">
+
+    <p id="notice"><%= notice %></p>
+
+  <%= form_tag("/arena/victor", method: "get") do %>
+    <%= label_tag(:id1, "Veuille sélectionner les combattants:") %>
+    <%#= number_field_tag(:id1) %>
+    <%#= collection_select :id1,  Combattant.all, :id,  :nom, prompt: 'selectionne' %>
+    <%= select_tag :combattants_selectionnes, options_from_collection_for_select(@combattants, "id", "nom"), multiple: true %>
+    <br/>
+    <br/>
+    <%= submit_tag "Lancer le combat", class: "btn btn-primary" %>
+  <% end %>
+
+    <%#= collection_select params[:id2], :id, Combattant.all, :id,  :nom, prompt: true %>
+
+</div>

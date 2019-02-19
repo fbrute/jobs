@@ -28,7 +28,7 @@ class CombattantsController < ApplicationController
 
     respond_to do |format|
       if @combattant.save
-        format.html { redirect_to @combattant, notice: 'Combattant was successfully created.' }
+        format.html { redirect_to @combattant, notice: 'Un(e) Combattant(e) a été créé(e) avec succès.' }
         format.json { render :show, status: :created, location: @combattant }
       else
         format.html { render :new }
@@ -62,6 +62,8 @@ class CombattantsController < ApplicationController
   end
 
   private
+
+ 
     # Use callbacks to share common setup or constraints between actions.
     def set_combattant
       @combattant = Combattant.find(params[:id])
